@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mainFields"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_FullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/fullNameTET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/full_name_hint"
+                            android:textColorHint="@color/colorAccent"
+                            android:inputType="textPersonName"
+                            android:maxLines="1"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_occupation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/occuTET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/occupation_hint"
+                            android:textColorHint="@color/colorAccent"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/til_college_orgn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/college_orgnTET"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/college_orgn_hint"
+                            android:textColorHint="@color/colorAccent"
+                            android:inputType="textPersonName|textCapWords|textShortMessage"
+                            android:maxHeight="80dp"
+                            android:maxLines="1" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        android:layout_marginBottom="20dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Select Blood Group *"
+                            android:textColor="@color/purpleColor"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+                        <HorizontalScrollView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scrollbarSize="1dp"
+                            android:scrollbarStyle="insideInset">
+
+                            <RadioGroup
+                                android:id="@+id/bloodGroup"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:weightSum="9"
+                                android:orientation="horizontal"
+                                android:layout_marginTop="10dp"
+                                android:padding="10dp">
+
+                                <RadioButton
+                                    android:id="@+id/a_plus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/a_plus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/a_minus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/a_minus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/b_plus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/b_plus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/b_minus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/b_minus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/ab_plus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/ab_plus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/ab_minus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/ab_minus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/o_plus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/o_plus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/o_minus"
+                                    android:layout_width="60dp"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/o_minus"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                                <RadioButton
+                                    android:id="@+id/type_idk"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="45dp"
+                                    android:layout_weight="1"
+                                    android:text="@string/idk"
+                                    android:background="@drawable/radio_bkg_sel"
+                                    android:button="@null"
+                                    android:gravity="center"
+                                    android:padding="10dp"
+                                    android:layout_marginRight="10dp"/>
+
+                            </RadioGroup>
+
+                        </HorizontalScrollView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/doneBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray"
+                android:text="@string/done_txt"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="36sp"
+                android:layout_below="@+id/mainFields"
+                android:layout_marginTop="60dp"
+                android:layout_alignParentBottom="true"/>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

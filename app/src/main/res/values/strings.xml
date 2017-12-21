@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">RxValidations</string>
+    <string name="done_txt">Done</string>
+    <string name="college_orgn_hint">College or Organization</string>
+    <string name="occupation_hint">Occupation</string>
+    <string name="full_name_hint">Full Name</string>
+    <string name="a_minus">A-</string>
+    <string name="b_plus">B+</string>
+    <string name="b_minus">B-</string>
+    <string name="ab_plus">AB+</string>
+    <string name="ab_minus">AB-</string>
+    <string name="o_plus">O+</string>
+    <string name="o_minus">O-</string>
+    <string name="idk">Don\'t Know</string>
+    <string name="a_plus">A+</string>
+    <string name="blood_grp_sel_error">Select Your BloodGroup</string>
+</resources>
